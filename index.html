@@ -5,14 +5,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<title>Nightwish</title>
-	<link rel="stylesheet" href="../Estilo/bootstrap.min.css" type="text/css">
-	<link rel="stylesheet" type="text/css" href="../Estilo/style.css">
+	<link rel="stylesheet" href="Estilo/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="Estilo/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Dancing+Script:400,700&display=swap" rel="stylesheet"> 
 
 
 </head>
 <body>
-	<div class="embed-responsive embed-responsive-16by9 ">
+	<div class="embed-responsive embed-responsive-16by9 header">
 		<video class="embed-responsive-item d-none d-lg-block" src="Video/Nightwish_Elan_Live.mp4" autoplay loop muted></video>
 		
 		<div class="container">
@@ -31,7 +31,11 @@
 		<li><a href="">sobre nosotros</a></li>   
 	</ul>
 	</nav>-->
-	<section class="contenido-principal"> 
+	
+
+	<main class="content">
+		
+		<section class="contenido-principal"> 
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6">
@@ -66,9 +70,8 @@
 						<ul>
 							<li>Discografía</li>
 							<li>Noticias</li>
-							<li>Próximos conciertos</li>
-							<li>letras de las canciones</li>
-							<li>Video  por album</li>
+							<li>letras</li>
+							<li>Videos</li>
 							<li>Galería de imágenes</li>
 						</ul>
 					
@@ -76,11 +79,10 @@
 				</div><!-- end col-md-6-->					
 			</div><!--End Row-->
 		</div><!--End container-->
-	</section><!--End contenido-principal-->
-
-	<main class="container">
+		</section><!--End contenido-principal-->
 		<section class="discografia">
-				<h1 class="title">Discografía</h1>
+				<div class="container">
+					<h1 class="title">Discografía</h1>
 				<div class="row">
 					<div class="col">
 							<img src="Discos/angels_fall_first.jpg" class="img-fluid">
@@ -211,11 +213,22 @@
 
 					</div><!--end col-->
 				</div><!--End row-->
+				</div><!--End container-->
 		</section>
 		<section class="videos">
-			<h1>videos</h1>
-			<iframe src="https://www.youtube.com/embed/Z4A5HwMOfW8" width="560" height="315" frameborder="0"></iframe>
-		</section>
+			<div class="container">
+				<h1 class="title">videos</h1>
+			<div id="NW_VidRep" class="embed embed-responsive embed-responsive-16by9 video-nightwish">
+										
+			</div>
+				<article class="nightwish_vids">
+
+				</article><!--End .nightwish_vids-->			
+				
+			</div><!--end container-->
+
+		</section><!--End video-->
+
 		
 	</main>		
 
@@ -225,6 +238,6 @@
 	<script src="js/jquery-3.3.1.min.js"></script>
 	<script src="js/popper.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	
+	<script src="js/nightwish.js"></script>
 </body>
 </html>

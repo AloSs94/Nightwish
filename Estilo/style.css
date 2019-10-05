@@ -5,10 +5,11 @@ body{
     background-attachment: fixed;
     background-size: cover;
 }
+
 .container{
     background-color: rgb(0,0,0,.85);
 }
-.embed-responsive{
+.header{
     position: relative;
     background-image:url('../Imgs/imaginaerum.jpg');
     background-position: center center;
@@ -17,12 +18,12 @@ body{
     
 }
 @media(min-width:992px){
-    .embed-responsive{
+    .header{
     background-image:unset;
     height: auto;
     }
 }
-.embed-responsive::after{
+.header::after{
     content:'';
     display: block;
     position: absolute;
@@ -41,15 +42,17 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#03003d",endCo
     top:50%;
     left:50%;
     z-index: 100;
-    transform: translate(-50%,-50%)
+    transform: translate(-50%,-50%);
 
 }
 .nightwish>h4{
     font-size:3.5rem;
+    
     font-weight:400;
     color: #fff;
 }
 .nightwish>h6{
+
     font-size:1.5rem;
 }
 .container{
@@ -103,11 +106,12 @@ text-align: center;
     color:#fff;
     
 }
-.discografia .title{
+.title{
     font-size: 3.5rem;
     padding: 48px 0;
     border-top:thin solid rgb(255, 255, 255);
-    
+    color: #fff;
+    font-weight: 700;
 }
 .discografia .al_title{
     font-size:3.5rem;
@@ -126,3 +130,80 @@ text-align: center;
     height: 496px;
     margin-top: 20px;
 }
+.nightwish_vids{
+    margin-top:20px;
+
+}
+.nightwish_vids img{
+    width:350px;
+    height: auto;
+    
+}
+
+.hovereffect{
+    position: relative;
+    width:350px;
+    margin: 15px 10px;
+    cursor: pointer;
+}
+.hovereffect img{
+    display: block;
+    width:350px;
+    height: auto;
+    
+}
+.hovereffect h1{
+    text-align:center;
+    font-size:30px;
+    font-weight: bold;
+    position: absolute;
+    background: linear-gradient(to bottom, rgba(5,5,5,1) 0%, rgba(211,70,246,1) 56%, rgba(255,125,26,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    align-content: center;
+}
+.overbottom {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.hovereffect .overbottom{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background:linear-gradient(#000,#022f69);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+.hovereffect:hover .overbottom{
+    height: 100%;
+    opacity: 0.9 ;
+}
+.nightwish_vids{
+
+    display: flex;
+    flex-wrap: wrap;
+}
+@media(max-width:992px){
+    .nightwish_vids{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        
+    }
+    .hovereffect{
+        position: relative;
+        width:100%;
+        margin: 10px 8px;
+    }
+    .hovereffect img{
+        display: block;
+        width:100%;
+        height: auto;
+    }
+}
+
+/**/
