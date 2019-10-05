@@ -191,12 +191,13 @@ text-align: center;
     .nightwish_vids{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content:center;
+        align-items: center;
         
     }
     .hovereffect{
         position: relative;
-        width:100%;
+        width:80%;
         margin: 10px 8px;
     }
     .hovereffect img{
