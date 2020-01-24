@@ -1,210 +1,298 @@
-body{
-    font-family: 'Dancing Script',cursive;
-    background-image:url('../Imgs/imaginaerum.jpg');
-    background-position: center center;
-    background-attachment: fixed;
-    background-size: cover;
+body {
+  font-family: "Dancing Script", cursive;
+  background-image: url("../Imgs/imaginaerum.jpg");
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
-.container{
-    background-color: rgb(0,0,0,.85);
+.container {
+  background-color: rgb(0, 0, 0, 0.85);
 }
-.header{
-    position: relative;
-    background-image:url('../Imgs/imaginaerum.jpg');
-    background-position: center center;
-    background-size: cover;
-    height:100vh;
-    
+.header {
+  position: relative;
+  background-image: url("../Imgs/imaginaerum.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
 }
-@media(min-width:992px){
-    .header{
-    background-image:unset;
+@media (min-width: 992px) {
+  .header {
+    background-image: unset;
     height: auto;
-    }
-}
-.header::after{
-    content:'';
-    display: block;
-    position: absolute;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background: rgb(3,0,61);
-background: -moz-linear-gradient(90deg, rgba(3,0,61,1) 0%, rgba(4,4,246,0.4429972672662815) 35%);
-background: -webkit-linear-gradient(90deg, rgba(3,0,61,1) 0%, rgba(4,4,246,0.4429972672662815) 35%);
-background: linear-gradient(90deg, rgba(3,0,61,1) 0%, rgba(4,4,246,0.4429972672662815) 35%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#03003d",endColorstr="#0404f6",GradientType=1);
-}
-
-.nightwish{
-    position: absolute;
-    top:50%;
-    left:50%;
-    z-index: 100;
-    transform: translate(-50%,-50%);
-
-}
-.nightwish>h4{
-    font-size:3.5rem;
     
-    font-weight:400;
-    color: #fff;
+  }
 }
-.nightwish>h6{
-
-    font-size:1.5rem;
-}
-.container{
-text-align: center;
-}
-
-@media(max-width:992px){
-    .nightwish{
-        top:50%;
-        left:50%;
-        transform: translate(-50%,-50%);
-        margin: 0;
-        padding: 0;
-    }
-    .nightwish>h4{
-        font-size: 2rem;
-        font-weight:bold;
-    }
-    .nightwish>h6{
-        font-size:1rem;
-        font-weight:bold;
-    }
-    .nightwish>img{
-        width:369.5px;
-        height:auto;
-               
-    }
+.header::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: rgb(3, 0, 61);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(3, 0, 61, 1) 0%,
+    rgba(4, 4, 246, 0.4429972672662815) 35%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(3, 0, 61, 1) 0%,
+    rgba(4, 4, 246, 0.4429972672662815) 35%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(3, 0, 61, 1) 0%,
+    rgba(4, 4, 246, 0.4429972672662815) 35%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#03003d",endColorstr="#0404f6",GradientType=1);
 }
 
-.contenido-principal{
-    background-image: url('../Imgs/imaginaerum.jpg');
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    color: #fff;
+.nightwish {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 100;
+  transform: translate(-50%, -50%);
 }
-.contenido-principal .text-dark{
-   color: #fff !important;
-   font-weight: bold;
-   font-size: 3rem;
-} 
-.contenido-principal .historia,.contenido-principal .info{
+.nightwish > h4 {
+  font-size: 3.5rem;
+
+  font-weight: 400;
+  color: #fff;
+}
+.nightwish > h6 {
+  font-size: 1.5rem;
+}
+.container {
+  text-align: center;
+}
+
+@media (max-width: 992px) {
+  .nightwish {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+  }
+  .nightwish > h4 {
     font-size: 2rem;
-}
-.contenido-principal ol,.contenido-principal ul{
-    font-size: 2.3rem;
-    margin-bottom: 1.5rem;
-}
-.discografia{
-    color:#fff;
-    
-}
-.title{
-    font-size: 3.5rem;
-    padding: 48px 0;
-    border-top:thin solid rgb(255, 255, 255);
-    color: #fff;
-    font-weight: 700;
-}
-.discografia .al_title{
-    font-size:3.5rem;
-    font-weight:400;
-    margin: 30px 0;
-}
-.discografia ol{
-    padding-bottom: 30px; 
-}
-.discografia ol>li{
-    font-size:1.7rem;
-    
-}
-.discografia img{
-    width: 500px;
-    height: 496px;
-    margin-top: 20px;
-}
-.nightwish_vids{
-    margin-top:20px;
-
-}
-.nightwish_vids img{
-    width:350px;
-    height: auto;
-    
-}
-
-.hovereffect{
-    position: relative;
-    width:350px;
-    margin: 15px 10px;
-    cursor: pointer;
-}
-.hovereffect img{
-    display: block;
-    width:350px;
-    height: auto;
-    
-}
-.hovereffect h1{
-    text-align:center;
-    font-size:30px;
     font-weight: bold;
-    position: absolute;
-    background: linear-gradient(to bottom, rgba(5,5,5,1) 0%, rgba(211,70,246,1) 56%, rgba(255,125,26,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    align-content: center;
+  }
+  .nightwish > h6 {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  .nightwish > img {
+    width: 369.5px;
+    height: auto;
+  }
+}
+
+#contenido-principal {
+  background-image: url("../Imgs/imaginaerum.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  
+
+}
+#contenido-principal .text-dark {
+  color: #fff !important;
+  font-weight: bold;
+  font-size: 3rem;
+}
+#contenido-principal #historia,
+#contenido-principal #info {
+  font-size: 2rem;
+}
+#contenido-principal ol,
+#contenido-principal ul {
+  font-size: 2.3rem;
+  margin-bottom: 1.5rem;
+}
+#discografia {
+  color: #fff;
+}
+.title {
+  font-size: 3.5rem;
+  padding: 48px 0;
+  border-top: thin solid rgb(255, 255, 255);
+  color: #fff;
+  font-weight: 700;
+}
+#discografia .al_title {
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin: 30px 0;
+}
+#discografia ol {
+  padding-bottom: 30px;
+}
+#discografia ol > li {
+  font-size: 1.7rem;
+}
+#discografia img {
+  width: 500px;
+  height: 496px;
+  margin-top: 20px;
+}
+.nightwish_vids {
+  margin-top: 20px;
+}
+.nightwish_vids img {
+  width: 350px;
+  height: auto;
+}
+
+.hovereffect {
+  position: relative;
+  width: 350px;
+  margin: 15px 10px;
+  cursor: pointer;
+}
+.hovereffect img {
+  display: block;
+  width: 350px;
+  height: auto;
+}
+.hovereffect h1 {
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  position: absolute;
+  color: #fff;
+  align-content: center;
 }
 .overbottom {
-    display:flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.hovereffect .overbottom{
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background:linear-gradient(#000,#022f69);
-    overflow: hidden;
-    width: 100%;
-    height: 0;
-    transition: .5s ease;
+.hovereffect .overbottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(#000, #022f69);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
 }
-.hovereffect:hover .overbottom{
-    height: 100%;
-    opacity: 0.9 ;
+.hovereffect:hover .overbottom {
+  height: 100%;
+  opacity: 0.9;
 }
-.nightwish_vids{
-
+.nightwish_vids {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (max-width: 992px) {
+  .nightwish_vids {
     display: flex;
     flex-wrap: wrap;
-}
-@media(max-width:992px){
-    .nightwish_vids{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content:center;
-        align-items: center;
-        
-    }
-    .hovereffect{
-        position: relative;
-        width:80%;
-        margin: 10px 8px;
-    }
-    .hovereffect img{
-        display: block;
-        width:100%;
-        height: auto;
-    }
+    justify-content: center;
+    align-items: center;
+  }
+  .hovereffect {
+    position: relative;
+    width: 80%;
+    margin: 10px 8px;
+  }
+  .hovereffect img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 }
 
-/**/
+/*letras*/
+#letras {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+#letras img {
+  width: 500px;
+  height: 500px;
+  margin: 15px 0;
+}
+
+.hidden {
+  display: none;
+}
+.nw_lyrics {
+  cursor: pointer;
+}
+.tracklist {
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+/*letras*/
+.modal_NW {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal-content {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0 auto;
+  width: 40%;
+  
+  padding: 1.5rem 5rem;
+  background:linear-gradient(#000,#022f69);
+  color:#fff;
+}
+.close_modal{
+    color:#fff;
+     transition: color 0.5s ease;
+    
+}
+.close_modal:hover,
+.close_modal:focus{
+  color: #e9fc07;
+  cursor: pointer;
+}
+
+.modal-header h2{
+  display: inline-block;
+  margin:0  auto;
+}
+/*tipo de letra*/
+#contenido-principal p, ul,.nightwish_vids,#letras> .tracklist{
+  font-family: 'Raleway', sans-serif;
+}
+/*Navegación principal*/
+#NavPrin{
+  justify-content:space-around;
+  
+}
+
+.bg-color{
+ background-color: #141b21 !important;
+}
+/*nav fade*/
+.fixed-top{
+  transition: all .3s ease;
+}
+.nav-link {
+  color:#fff !important;
+  font-weight: bold;
+}
+.fixed-top .active{
+  background-color: #224468 !important;
+}
