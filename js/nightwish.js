@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  var key = "AIzaSyBfjgig5CEoNxtb3JJVAvBCOO-6y1WR13s";
+  var key = "AIzaSyBSW5GJoSOmbebelowKiiRcAPazD-LclEM";
   var playlistId = "PL1Oe56aTHJgHpocUNiB7zNrFz7ZQr6EhP";
   var URL = "https://www.googleapis.com/youtube/v3/playlistItems";
 
