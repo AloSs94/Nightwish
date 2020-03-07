@@ -1,3 +1,4 @@
+
 body {
   font-family: "Dancing Script", cursive;
   background-image: url("../Imgs/imaginaerum.jpg");
@@ -5,6 +6,7 @@ body {
   background-attachment: fixed;
   background-size: cover;
 }
+
 
 .container {
   background-color: rgb(0, 0, 0, 0.85);
@@ -55,10 +57,10 @@ body {
   left: 50%;
   z-index: 100;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 .nightwish > h4 {
   font-size: 3.5rem;
-
   font-weight: 400;
   color: #fff;
 }
@@ -101,6 +103,7 @@ body {
   
 
 }
+
 #contenido-principal .text-dark {
   color: #fff !important;
   font-weight: bold;
@@ -117,13 +120,14 @@ body {
 }
 #discografia {
   color: #fff;
+  text-align: center;
 }
 .title {
-  font-size: 3.5rem;
+  
   padding: 48px 0;
   border-top: thin solid rgb(255, 255, 255);
   color: #fff;
-  font-weight: 700;
+ 
 }
 #discografia .al_title {
   font-size: 3.5rem;
@@ -132,10 +136,23 @@ body {
 }
 #discografia ol {
   padding-bottom: 30px;
+  
+
 }
 #discografia ol > li {
   font-size: 1.7rem;
+
 }
+
+/*Estilo LISTAS*/
+#contenido-principal ul, #contenido-principal ol,
+#discografia ol,#letras ol{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+} 
+
 #discografia img {
   width: 500px;
   height: 496px;
@@ -259,7 +276,7 @@ body {
 }
 .close_modal{
     color:#fff;
-     transition: color 0.5s ease;
+    transition: color 0.5s ease;
     
 }
 .close_modal:hover,
