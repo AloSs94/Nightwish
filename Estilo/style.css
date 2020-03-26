@@ -176,7 +176,7 @@ body {
   height: 100%;
   border: none;
 }
-#videos li > a:active,#videos li > a:visited{
+#videos li > a:active,li > a:visited,li>a:focus{
   border: none;
   color: #000;
 }
