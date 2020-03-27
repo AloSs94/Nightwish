@@ -321,10 +321,8 @@ body {
 
 }
 
-@media(max-width:1200px){
-  .container{
-    width: 100vw;
-  }
+@media(max-width:2350px){
+ 
   #videos ul{
     margin: 0;
     padding: 0;
