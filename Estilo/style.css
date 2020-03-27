@@ -210,25 +210,20 @@ body {
  
   height: 180px;
 }
-/* 
+
 @media (max-width: 992px) {
-  .nightwish_vids {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+ #videos ul{
+   margin: 0;
+   padding: 0;
+   width:auto;
+ }
+  #videos li{
+  width: 100%;
   }
-  .hovereffect {
-    position: relative;
-    width: 80%;
-    margin: 10px 8px;
+  #videos li .overbottom{
+    width: 350px;
   }
-  .hovereffect img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-} */
+ }
 
 /*letras*/
 #letras {
@@ -314,4 +309,28 @@ body {
 }
 .fixed-top .active{
   background-color: #224468 !important;
+}
+/*Modal*/
+@media (max-width: 992px){
+  #NavPrin{
+    font-size:13px;
+  }
+  .modal-content {
+    width: 100%;
+    }
+
+}
+
+@media(max-width:1200px){
+  #videos ul{
+    margin: 0;
+    padding: 0;
+    width:auto;
+  }
+   #videos li{
+   width: 100%;
+   }
+   #videos li .overbottom{
+     width: 350px;
+   }
 }
