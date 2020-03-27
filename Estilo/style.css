@@ -291,7 +291,7 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 /*Navegación principal*/
-#NavPrin{
+#NavPrin > #CollapseBar{
   justify-content:space-around;
   
 }
