@@ -328,10 +328,8 @@ body {
     padding: 0;
     width:auto;
   }
-   #videos li{
-   width: 100vw;
-   }
+  
    #videos li .overbottom{
-     width:300px;
+     width:310px;
    }
 }
