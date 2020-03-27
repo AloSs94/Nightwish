@@ -332,6 +332,6 @@ body {
    width: 100vw;
    }
    #videos li .overbottom{
-     width: 100vh;
+     width:300px;
    }
 }
